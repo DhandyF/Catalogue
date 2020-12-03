@@ -38,33 +38,17 @@ export default {
   },
   watch: {
     search () {
-      if (this.search === '') {
-        this.productInit()
-      } else {
-        this.filterProduct()
-      }
+      this.filterProduct()
       this.showClearIcon()
     },
     '$store.state.category' () {
-      if (this.$store.state.category === '') {
-        this.productInit()
-      } else {
-        this.filterProduct()
-      }
+      this.filterProduct()
     },
     '$store.state.minPrice' () {
-      if (this.$store.state.minPrice === 0) {
-        this.productInit()
-      } else {
-        this.filterProduct()
-      }
+      this.filterProduct()
     },
     '$store.state.maxPrice' () {
-      if (this.$store.state.maxPrice === 0) {
-        this.productInit()
-      } else {
-        this.filterProduct()
-      }
+      this.filterProduct()
     }
   },
   mounted () {

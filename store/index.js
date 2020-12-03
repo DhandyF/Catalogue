@@ -20,7 +20,7 @@ export const mutations = {
     state.minPrice = 0
   },
   STORE_MAX_PRICE (state, price) {
-    if (price !== null) {
+    if (price !== null || price !== '') {
       state.maxPrice = price
     }
   },

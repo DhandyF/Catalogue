@@ -29,7 +29,6 @@ html {
   width: 100%;
   margin: 60px 0 0 0;
   padding: 0 70px;
-  /* border: 1px solid black; */
 }
 
 .content {
@@ -37,6 +36,5 @@ html {
   margin: 0;
   padding: 20px;
   display: flex;
-  /* border: 1px solid yellow; */
 }
 </style>

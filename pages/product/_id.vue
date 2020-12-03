@@ -242,7 +242,7 @@ export default {
 
 .product-content .product-image {
   width: 40%;
-  min-width: 250px;
+  min-width: 467px;
 }
 
 .product-content .product-detail {
@@ -300,6 +300,7 @@ export default {
 
 .label {
   width: 120px;
+  min-width: 120px;
   font-family: 'Quicksand-SemiBold', sans-serif;
   font-size: 15px;
   color: rgba(92, 64, 80, .5);
@@ -458,5 +459,23 @@ export default {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media screen and (max-width: 980px) {
+  .product-content {
+    flex-direction: column;
+  }
+
+  .product-content .product-image {
+    margin: 0 auto;
+    width: 467px;
+  }
+
+  .product-content .product-detail {
+    margin: 0 auto 50px auto;
+    width: 70%;
+    min-width: 467px;
+    padding: 0;
+  }
 }
 </style>

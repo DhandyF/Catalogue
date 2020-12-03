@@ -30,9 +30,9 @@ html {
 
 .container {
   width: 100%;
+  min-width: 650px;
   margin: 60px 0 0 0;
   padding: 0 70px;
-  /* border: 1px solid black; */
 }
 
 .content {
@@ -40,14 +40,12 @@ html {
   margin: 0;
   padding: 0;
   display: flex;
-  /* border: 1px solid black; */
 }
 
 .catalog {
   width: 100%;
   margin: 0;
   padding: 20px;
-  /* border: 1px solid yellow; */
 }
 
 .button--purple {
@@ -77,5 +75,11 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    padding: 0 0 0 30px;
+  }
 }
 </style>

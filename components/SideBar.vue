@@ -52,7 +52,7 @@ export default {
   },
   computed: {
     showClearFilter () {
-      if (this.category !== '' || this.minPrice !== null || this.maxPrice !== null) {
+      if (this.category !== '' || (this.minPrice !== null && this.minPrice !== '') || (this.maxPrice !== null && this.maxPrice !== '')) {
         return true
       } else {
         return false
@@ -102,8 +102,16 @@ export default {
       this.$store.dispatch('storeCategory', category)
     },
     applyPriceFilter () {
-      this.$store.dispatch('storeMinPrice', this.minPrice)
-      this.$store.dispatch('storeMaxPrice', this.maxPrice)
+      if (this.maxPrice === null || this.maxPrice === '') {
+        this.$store.dispatch('removeMaxPrice')
+      } else {
+        this.$store.dispatch('storeMaxPrice', this.maxPrice)
+      }
+      if (this.minPrice === null || this.minPrice === '') {
+        this.$store.dispatch('removeMinPrice')
+      } else {
+        this.$store.dispatch('storeMinPrice', this.minPrice)
+      }
     },
     clearCategory () {
       this.category = ''
