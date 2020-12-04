@@ -1,0 +1,13 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/index.js": "pages/index.js",
+    "pages/product/_id.js": "pages/product/_id.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "pages/index.js": "pages/index.js.map",
+    "pages/product/_id.js": "pages/product/_id.js.map",
+    "server.js": "server.js.map"
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "product-id",
+    "path": "/product/:id?",
+    "component": "D:\\\\Dhandy\\\\Kerja\\\\Project\\\\Catalogue_dep\\\\Catalogue\\\\src\\\\pages\\\\product\\\\_id.vue",
+    "chunkName": "pages/product/_id",
+    "_name": "_2b83052f"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\Dhandy\\\\Kerja\\\\Project\\\\Catalogue_dep\\\\Catalogue\\\\src\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_6fb9aa7e"
+  }
+]

@@ -44,6 +44,10 @@ export default {
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
+  buildDir: '../functions/nuxt',
   build: {
+    publicPath: '/',
+    vendor: ['axios'],
+    extractCSS: true,
   }
 }
